@@ -2,7 +2,7 @@ import os
 
 
 def get_sqlite_filedb_uri():
-    return f"sqlite:///../allocation.db"
+    return f"sqlite:///./allocation.db"
 
 
 def get_api_url():

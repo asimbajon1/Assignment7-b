@@ -43,6 +43,8 @@ def session_factory(file_sqlite_db):
     # # remove db
     # path = Path(__file__).parent
     # os.remove(path / "allocation.db")
+    path  = Path(__file__).resolve().parent.parent / "allocation.db"
+    os.remove(path)
 
 
 @pytest.fixture
